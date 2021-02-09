@@ -1,0 +1,9 @@
+<hr/>
+<h3>Detalles de {{location.name}}</h3>
+<h4>ID: {{location.id}}</h4>
+<h4>type: {{location.type}}</h4>
+<h4>dimension: {{location.dimension}}</h4>
+<h4>Residentes:</h4>
+<ul>
+    <li *ngFor="let resident of residents">{{resident}}</li>
+</ul>

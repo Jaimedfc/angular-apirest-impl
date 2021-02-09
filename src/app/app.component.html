@@ -1,0 +1,8 @@
+<div style="text-align: center;">
+  <h2>Localizaciones de Rick y Morty</h2>
+  <span *ngFor="let loc of locations">
+    <a (click)="goTo(loc.id)" routerLinkActive="active">{{loc.name}}</a>
+    &nbsp;&nbsp;&nbsp;
+  </span>
+  <router-outlet></router-outlet>
+</div>
